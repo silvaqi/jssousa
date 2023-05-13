@@ -26,6 +26,9 @@
    	<ul>
 		<li><a href="https://goodreads.com/sousaj" target="_blank">Goodreads</a></li>
 	</ul> 
+    <div class="count">
+        <p>You already viewed this page: <span id="coutId">&nbsp;</span>times</p>
+    </div>
 	<script>
 	
 		var clicksValue = 0;		
@@ -37,6 +40,8 @@
 				location.href="https://bugjss.tech/about.html"
 			}
 		})
-	</script>
+
+        document.getElementById("coutId").innerHTML = 0;
+        </script>
    </body>
 </html>
