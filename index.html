@@ -1,70 +1,39 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8" />
-        <title>x</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="icon" type="image/x-icon" href="" />
-        <style>
-            html {
-                font-family: serif;
-            }
-        </style>
-    </head>
-    <body>
-	<script type="text/javascript">function egg(){alert("click on document three time to see redirect for the horizon.")}</script>
-	<script type="text/javascript">var click = 0;</script>
-    <div class="container">
-        <span>under construction</span>&nbsp;<i class="fa-sharp fa-solid fa-hammer" style="color: #000;" onclick="egg()"></i>
-   	<ul>
-		<li><a href="https://goodreads.com/sousaj" target="_blank">Goodreads</a></li>
-	</ul> 
-    <div class="count">
-        <p>You already viewed this page: <span id="coutId">&nbsp;</span>times</p>
-    </div>
-    </div>
-<script>
-    const encryptData = btoa('cool');
-    console.log(encryptData)
-
-    const wall = prompt('copy and paste below to unlock: ' + encryptData + ' or wait 10s to auto unlock.');
-            if(wall == encryptData){
-                //document.write('now you have access to see')
-                document.querySelector(".container").style.display = "block"
-            }else{
-                document.write('missing step access')
-                document.querySelector(".container").style.display = "none";
-            }
-
-            function unlockPage(){
-                document.querySelector(".container").style.display = "block";
-                
-            }
-
-
-            setTimeout(unlockPage, 10000)
+  <head>
+    <meta charset="utf-8">
+    <title>Jeferson @silva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <meta name="author" content="bug">
+  </head>
+  <body onload="page()">
+    <header>
+      <span></span>
+    </header>
+    <main>
+      <div class="container">
+        <h1><i>Jeferson Silva</i></h1>
+        <br>
+        <ul class="media">
+          <li><a href="about.html">about</a></li> //
+          <li><a href="faq.html">q&a</a></li> //
+          <li><a href="https://www.youtube.com/@silvasj" target="_blank">youtube channel</a></li> //
+          <li><a href="dm.html">contact me</a></li> //
+          <li><a href="useful.html">useful</a></li>
+        </ul>
+        <br>
+        <div class="time">
+          <span><i>current time: <u>Brazil, Recife</u></li>&nbsp;<iframe title="my time" src="https://free.timeanddate.com/clock/i8uxdw9h/n209/tlbr5/fn10/fti/th2" frameborder="0" width="74" height="18"></iframe>
+ </span>
+      </div>
+    </main>
+    <script type="text/javascript">
+      function page(){
+          
+      }
     </script>
-	<script>
-	
-		var clicksValue = 0;		
-
-		window.addEventListener('click', function(){
-			clicksValue += 1;
-			console.log(clicksValue)
-			if(clicksValue == 3){
-				location.href="https://bugjss.tech/about.html"
-			}
-		})
-
-        document.getElementById("coutId").innerHTML = 0;
-        </script>
-   </body>
+  </body>
 </html>
