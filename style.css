@@ -24,3 +24,11 @@ main{
     display: flex;
     gap: 10px;
 }
+
+.time{
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+}
